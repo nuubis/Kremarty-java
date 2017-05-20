@@ -16,5 +16,9 @@ public class RageController implements Initializable {
 		
 	}
 	
+	private void kontroll(){
+		System.out.println("Ma töötan");
+	}
+	
 	
 }
