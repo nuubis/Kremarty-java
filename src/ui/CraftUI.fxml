@@ -4,8 +4,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="application.MenuController">
    <children>
-      <Button layoutX="616.0" layoutY="292.0" mnemonicParsing="false" text="back" />
+      <Button fx:id="gameBack" layoutX="616.0" layoutY="292.0" mnemonicParsing="false" onAction="#changeScene" text="back" />
    </children>
 </AnchorPane>

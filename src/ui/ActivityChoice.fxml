@@ -21,7 +21,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="850.0" layoutY="200.0" mnemonicParsing="false" opacity="0.0" text="Mine">
+      <Button fx:id="mine" layoutX="850.0" layoutY="200.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Mine">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -31,7 +31,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="308.0" layoutY="406.0" mnemonicParsing="false" opacity="0.0" text="Village">
+      <Button fx:id="village" layoutX="308.0" layoutY="406.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Village">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -41,7 +41,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="590.0" layoutY="501.0" mnemonicParsing="false" opacity="0.0" text="Craft">
+      <Button fx:id="craft" layoutX="590.0" layoutY="501.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Craft">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -51,7 +51,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="309.0" layoutY="607.0" mnemonicParsing="false" opacity="0.0" text="Gather">
+      <Button fx:id="gather" layoutX="309.0" layoutY="607.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Gather">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -61,7 +61,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="850.0" layoutY="663.0" mnemonicParsing="false" opacity="0.0" text="Explore">
+      <Button fx:id="explore" layoutX="850.0" layoutY="663.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Explore">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
