@@ -36,7 +36,7 @@ public class MenuController implements Initializable {
 	private String name;*/
 	
 	@FXML
-	public Button play, load, help, quit, startGame, back;
+	public Button play, load, help, quit, startGame, back, craft, explore, gather, mine, village, gameBack;
 	public TextField insertName;
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	ToggleGroup Race, Gender;
@@ -113,6 +113,36 @@ public class MenuController implements Initializable {
 	    	stage=(Stage) startGame.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
 	    }
+	    
+	    else if (event.getSource()==craft){
+	    	stage=(Stage) craft.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CraftUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==explore){
+	    	stage=(Stage) explore.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ExploreUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==gather){
+	    	stage=(Stage) gather.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/GatherUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==mine){
+	    	stage=(Stage) mine.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/MineUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==village){
+	    	stage=(Stage) village.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/VillageUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==gameBack){
+	    	stage=(Stage) gameBack.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
+	    }
 	     
 	    else {
 	    	stage=(Stage) back.getScene().getWindow();
@@ -132,7 +162,7 @@ public class MenuController implements Initializable {
 	
 	@FXML
 	private void quitGame(){
-		
+		System.out.println("System is existing!");
 		Platform.exit();
     	System.exit(0);	    
 	}
