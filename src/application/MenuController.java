@@ -1,9 +1,14 @@
 package application;
 
+import game.Character;
+import game.HumanCharacter;
+
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import game.Inventory;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -34,7 +39,7 @@ public class MenuController implements Initializable {
 	public TextField insertName;
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	ToggleGroup Race, Gender;
-	ImageView charchoose;
+	ImageView charChoose;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -57,11 +62,14 @@ public class MenuController implements Initializable {
 	
 	@FXML
 	private void changeScene2(MouseEvent event) throws IOException{
+		System.out.println("hello");
 		Stage stage;
 	    Parent root;
-		if (event.getSource()==charchoose){
+	    System.out.println(event.getSource());
+	    System.out.println(charChoose);
+		if (event.getSource()==charChoose){
 			System.out.println("I work");
-	    	stage=(Stage) charchoose.getScene().getWindow();
+	    	stage=(Stage) charChoose.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
 	    }
 	}
@@ -71,6 +79,8 @@ public class MenuController implements Initializable {
 		System.out.println("I work");
 	    Stage stage; 
 	    Parent root;
+	    System.out.println(event.getSource());
+	    System.out.println(play);
 	    if(event.getSource()==play){
 	       //get reference to the button's stage         
 	       stage=(Stage) play.getScene().getWindow();
@@ -90,6 +100,7 @@ public class MenuController implements Initializable {
 	    }
 	    
 	    else if(event.getSource()==startGame){
+	    	Character character = new HumanCharacter("Test", "male", 100, 100, new ArrayList<>(), 10, "human", 5, 5);
 	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
 	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
 	    	String gender = genderButton.getText();
