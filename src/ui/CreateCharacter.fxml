@@ -142,12 +142,12 @@
                      </font></Button>
                   <ImageView fitHeight="67.0" fitWidth="384.0" layoutX="677.0" layoutY="92.0">
                      <image>
-                        <Image url="@../../Pictures/button%20art.png" />
+                        <Image url="@../../Pictures/button%20art%20black.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="45.0" fitWidth="238.0" layoutX="750.0" layoutY="182.0">
+                  <ImageView fitHeight="45.0" fitWidth="238.0" layoutX="750.0" layoutY="180.0">
                      <image>
-                        <Image url="@../../Pictures/button%20art.png" />
+                        <Image url="@../../Pictures/button%20art%20black.png" />
                      </image>
                   </ImageView>
                </children>
