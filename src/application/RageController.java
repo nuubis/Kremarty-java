@@ -32,17 +32,17 @@ public class RageController implements Initializable {
 	        //get reference to the button's stage         
 	        stage=(Stage) play.getScene().getWindow();
 	        //load up OTHER FXML document
-	  root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
-	      }
-	     else{
+	        root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	     }
+	     else{ // if (event.getSource()==back)
 	       stage=(Stage) back.getScene().getWindow();
-	  root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
-	      }
+	       root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
+	     }
 	     //create a new scene with root and set the stage
-	      Scene scene = new Scene(root);
-	      stage.setScene(scene);
-	      stage.show();
-	    }
+	     Scene scene = new Scene(root);
+	     stage.setScene(scene);
+	     stage.show();
+	     }
 	
 	
 	
