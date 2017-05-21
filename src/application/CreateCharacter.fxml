@@ -3,11 +3,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox prefHeight="300.0" prefWidth="1200.0">
          <children>
@@ -33,30 +35,45 @@
                         <Font name="Harrington" size="24.0" />
                      </font>
                   </RadioButton>
-                  <TextArea editable="false" layoutX="172.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Human is a dps. Its main stats are Strength and Agility." wrapText="true">
+                  <TextArea editable="false" layoutX="172.0" layoutY="90.0" prefHeight="120.0" prefWidth="180.0" text="Human is a dps. Its main stats are Strength and Agility." wrapText="true">
                      <font>
                         <Font name="Harrington" size="20.0" />
                      </font>
                   </TextArea>
-                  <TextArea layoutX="565.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Elf is a mage. Its main stats are Agility and Intelligence." wrapText="true">
+                  <TextArea layoutX="565.0" layoutY="90.0" prefHeight="120.0" prefWidth="180.0" text="Elf is a mage. Its main stats are Agility and Intelligence." wrapText="true">
                      <font>
                         <Font name="Harrington" size="20.0" />
                      </font>
                   </TextArea>
-                  <TextArea layoutX="955.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Dwarf is a tank. Its main stats are Strength and Defence." wrapText="true">
+                  <TextArea layoutX="955.0" layoutY="90.0" prefHeight="120.0" prefWidth="180.0" text="Dwarf is a tank. Its main stats are Strength and Defence." wrapText="true">
                      <font>
                         <Font name="Harrington" size="20.0" />
                      </font>
                   </TextArea>
+                  <ImageView layoutX="444.0" layoutY="90.0">
+                     <image>
+                        <Image url="@../../elf.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="835.0" layoutY="90.0">
+                     <image>
+                        <Image url="@../../dwarf.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="52.0" layoutY="90.0">
+                     <image>
+                        <Image url="@../../human.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
       </VBox>
-      <VBox layoutY="300.0" prefHeight="300.0" prefWidth="1200.0">
+      <VBox layoutY="300.0" prefHeight="250.0" prefWidth="1200.0">
          <children>
-            <AnchorPane prefHeight="300.0" prefWidth="1200.0">
+            <AnchorPane prefHeight="250.0" prefWidth="1200.0">
                <children>
-                  <Label layoutX="436.0" layoutY="29.0" text="Choose Your Gender">
+                  <Label layoutX="436.0" layoutY="14.0" text="Choose Your Gender">
                      <font>
                         <Font name="Harrington" size="36.0" />
                      </font>
@@ -65,9 +82,9 @@
             </AnchorPane>
          </children>
       </VBox>
-      <VBox layoutY="600.0" prefHeight="200.0" prefWidth="1200.0">
+      <VBox layoutY="550.0" prefHeight="250.0" prefWidth="1200.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="1200.0">
+            <AnchorPane prefHeight="250.0" prefWidth="1200.0">
                <children>
                   <Label layoutX="450.0" layoutY="14.0" text="Choose Your Name">
                      <font>
