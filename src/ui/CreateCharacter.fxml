@@ -111,6 +111,7 @@
                         <Font name="Harrington" size="36.0" />
                      </font>
                   </Button>
+                  <Button fx:id="back" layoutX="568.0" layoutY="205.0" mnemonicParsing="false" onAction="#changeScene" text="back" />
                </children>
             </AnchorPane>
          </children>
