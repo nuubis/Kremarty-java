@@ -51,7 +51,7 @@ public class MenuController implements Initializable {
 	    
 	    else if(event.getSource()==startGame){
 	    	stage=(Stage) startGame.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
+		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
 	    }
 	     
 	    else {

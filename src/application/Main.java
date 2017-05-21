@@ -15,8 +15,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-    	GameController gameController;
-    	loadControls("/ui/ActivityChoice.fxml", new GameController());
+    	//GameController gameController;
+    	//loadControls("/ui/ActivityChoice.fxml", new GameController());
         Parent root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
         primaryStage.setTitle("Lost Rage");
         primaryStage.setScene(new Scene(root, 1200, 800));
@@ -27,7 +27,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
+    }/*
     private Node loadControls(String fxml, Initializable controller) throws IOException {
            //URL resource = getClass().getResource(fxml);
            if (getClass().getResource(fxml) == null)
@@ -37,5 +37,5 @@ public class Main extends Application {
            fxmlLoader.setController(controller);
            return fxmlLoader.load();
            
-       }
+       }*/
 }
