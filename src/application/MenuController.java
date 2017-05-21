@@ -32,6 +32,11 @@ public class MenuController implements Initializable {
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	ToggleGroup Race, Gender;
 	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		System.out.println("System working!");
+	}
+	
 	@FXML
 	private void handleButtons(ActionEvent event){
 		System.out.println("Radio is on!");
@@ -45,13 +50,6 @@ public class MenuController implements Initializable {
             }
         });
 	}
-	
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		System.out.println("System working!");
-	}
-	
-	
 	
 	@FXML
 	private void changeScene(ActionEvent event) throws IOException{
