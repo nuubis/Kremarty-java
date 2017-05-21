@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -20,6 +21,7 @@ public class MenuController implements Initializable {
 	@FXML
 	public Button play, load, help, quit, startGame, back;
 	public TextField insertName;
+	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -63,6 +65,21 @@ public class MenuController implements Initializable {
 	    stage.setScene(scene);
 	    stage.show();
 	    }
+	
+	private void createCharacter(){
+		String race;
+		String name;
+		String gender;
+		
+	    //which single radio button is selected?
+	    if(radioHuman.isSelected()) race = "human";
+	    else if(radioElf.isSelected()) race = "elf";
+	    else race = "dwarf"; //then must be third one
+	    if(radioMale.isSelected()) gender = "male";
+	    else gender = "female";
+	    name = insertName.getText();
+	    System.out.println("Race, gender, name: "+race + " " + gender + " " + name);
+	 }
 	
 	@FXML
 	private void quitGame(){
