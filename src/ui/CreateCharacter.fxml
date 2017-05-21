@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -126,9 +125,6 @@
                      <font>
                         <Font name="Harrington" size="36.0" />
                      </font>
-                     <effect>
-                        <Glow />
-                     </effect>
                   </Label>
                   <Button fx:id="startGame" layoutX="677.0" layoutY="92.0" mnemonicParsing="false" onAction="#changeScene" opacity="0.0" text="Start Your Adventure">
                      <font>
@@ -144,6 +140,16 @@
                      <font>
                         <Font name="Harrington" size="24.0" />
                      </font></Button>
+                  <ImageView fitHeight="67.0" fitWidth="384.0" layoutX="677.0" layoutY="92.0">
+                     <image>
+                        <Image url="@../../Pictures/button%20art.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="238.0" layoutX="750.0" layoutY="182.0">
+                     <image>
+                        <Image url="@../../Pictures/button%20art.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
