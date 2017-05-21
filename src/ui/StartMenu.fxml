@@ -79,7 +79,7 @@
             <Font name="Harrington" size="48.0" />
          </font>
       </Button>
-      <ImageView fx:id="charchoose" fitHeight="150.0" fitWidth="200.0" layoutX="177.0" layoutY="369.0" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="charchoose" fitHeight="150.0" fitWidth="200.0" layoutX="177.0" layoutY="369.0" onMouseClicked="#changeScene2" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../Pictures/human.jpg" />
          </image>

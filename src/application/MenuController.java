@@ -18,6 +18,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
@@ -31,6 +34,7 @@ public class MenuController implements Initializable {
 	public TextField insertName;
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	ToggleGroup Race, Gender;
+	ImageView charchoose;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -49,6 +53,17 @@ public class MenuController implements Initializable {
             System.out.println("Selected Radio Button - "+chk.getText());
             }
         });
+	}
+	
+	@FXML
+	private void changeScene2(MouseEvent event) throws IOException{
+		Stage stage;
+	    Parent root;
+		if (event.getSource()==charchoose){
+			System.out.println("I work");
+	    	stage=(Stage) charchoose.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	    }
 	}
 	
 	@FXML
@@ -73,6 +88,7 @@ public class MenuController implements Initializable {
 	    	stage=(Stage) help.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
 	    }
+	    
 	    else if(event.getSource()==startGame){
 	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
 	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
