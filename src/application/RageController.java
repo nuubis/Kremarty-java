@@ -13,12 +13,11 @@ public class RageController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		
 	}
 	
-	/*private void kontroll(){
+	public void kontroll(){
 		System.out.println("Ma töötan");
-	}*/
+	}
 	
 	
 }
