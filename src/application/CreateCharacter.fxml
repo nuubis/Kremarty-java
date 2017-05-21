@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="300.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="1200.0">
+               <children>
+                  <Label layoutX="454.0" layoutY="14.0" text="Choose Your Race">
+                     <font>
+                        <Font name="Harrington" size="36.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="172.0" layoutY="249.0" mnemonicParsing="false" text="Human">
+                     <font>
+                        <Font name="Harrington" size="24.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="565.0" layoutY="249.0" mnemonicParsing="false" text="Elf">
+                     <font>
+                        <Font name="Harrington" size="24.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="955.0" layoutY="249.0" mnemonicParsing="false" text="Dwarf">
+                     <font>
+                        <Font name="Harrington" size="24.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField layoutX="172.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
+                  <TextField layoutX="565.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
+                  <TextField layoutX="955.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutY="300.0" prefHeight="300.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="1200.0">
+               <children>
+                  <Label layoutX="436.0" layoutY="29.0" text="Choose Your Gender">
+                     <font>
+                        <Font name="Harrington" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutY="600.0" prefHeight="200.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="1200.0">
+               <children>
+                  <Label layoutX="450.0" layoutY="14.0" text="Choose Your Name">
+                     <font>
+                        <Font name="Harrington" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
