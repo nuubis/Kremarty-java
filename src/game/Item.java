@@ -2,19 +2,23 @@ package game;
 
 public class Item {
 
-	String itemName;
+	String name;
 	String type;
+	String rarity;
+	String description;
 	int amount;
+	int price;
 	
-	public Item(String itemName, String type, int amount) {
+	public Item(String name, String type, int amount, String description) {
 		super();
-		this.itemName = itemName;
+		this.name = name;
 		this.type = type;
 		this.amount = amount;
+		this.description = description;
 	}
 
 	public String getItemName() {
-		return itemName;
+		return name;
 	}
 
 	public String getType() {
@@ -28,6 +32,11 @@ public class Item {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+	
 	
 	
 
