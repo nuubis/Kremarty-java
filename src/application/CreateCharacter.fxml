@@ -2,7 +2,7 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -33,9 +33,21 @@
                         <Font name="Harrington" size="24.0" />
                      </font>
                   </RadioButton>
-                  <TextField layoutX="172.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
-                  <TextField layoutX="565.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
-                  <TextField layoutX="955.0" layoutY="90.0" prefHeight="150.0" prefWidth="180.0" />
+                  <TextArea editable="false" layoutX="172.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Human is a dps. Its main stats are Strength and Agility." wrapText="true">
+                     <font>
+                        <Font name="Harrington" size="20.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea layoutX="565.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Elf is a mage. Its main stats are Agility and Intelligence." wrapText="true">
+                     <font>
+                        <Font name="Harrington" size="20.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea layoutX="955.0" layoutY="75.0" prefHeight="150.0" prefWidth="180.0" text="Dwarf is a tank. Its main stats are Strength and Defence." wrapText="true">
+                     <font>
+                        <Font name="Harrington" size="20.0" />
+                     </font>
+                  </TextArea>
                </children>
             </AnchorPane>
          </children>
