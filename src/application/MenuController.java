@@ -50,11 +50,6 @@ public class MenuController implements Initializable {
 	    	stage=(Stage) help.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
 	    }
-	    
-	    else if(event.getSource()==startGame){
-	    	stage=(Stage) startGame.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
-	    }
 	     
 	    else {
 	    	stage=(Stage) back.getScene().getWindow();
@@ -66,10 +61,12 @@ public class MenuController implements Initializable {
 	    stage.show();
 	    }
 	
-	private void createCharacter(){
+	private void createCharacter(ActionEvent event) throws IOException{
 		String race;
 		String name;
 		String gender;
+		Stage stage; 
+	    Parent root;
 		
 	    //which single radio button is selected?
 	    if(radioHuman.isSelected()) race = "human";
@@ -79,7 +76,15 @@ public class MenuController implements Initializable {
 	    else gender = "female";
 	    name = insertName.getText();
 	    System.out.println("Race, gender, name: "+race + " " + gender + " " + name);
-	 }
+    	stage=(Stage) startGame.getScene().getWindow();
+	    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
+	    if(event.getSource()==startGame){
+		    Scene scene = new Scene(root);
+		    stage.setScene(scene);
+		    stage.show();
+	    }
+	    
+	}
 	
 	@FXML
 	private void quitGame(){
