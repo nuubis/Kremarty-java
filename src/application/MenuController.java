@@ -15,10 +15,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class RageController implements Initializable {
+public class MenuController implements Initializable {
 	
 	@FXML
-	public Button play, load, help, quit, back, startGame;
+	public Button play, load, help, quit, startGame, back;
 	public TextField insertName;
 	
 	@Override
@@ -50,10 +50,10 @@ public class RageController implements Initializable {
 	    }
 	    
 	    else if(event.getSource()==startGame){
-	    	stage=(Stage) help.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	    	stage=(Stage) startGame.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
 	    }
-	    	    
+	     
 	    else {
 	    	stage=(Stage) back.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
