@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RageController">
    <children>
       <VBox prefHeight="300.0" prefWidth="1200.0">
          <children>
@@ -110,7 +106,7 @@
                      </font>
                   </Label>
                   <TextField fx:id="insertName" layoutX="210.0" layoutY="109.0" prefHeight="50.0" prefWidth="250.0" promptText="insert your character's name" />
-                  <Button layoutX="677.0" layoutY="92.0" mnemonicParsing="false" text="Start Your Adventure">
+                  <Button fx:id="startGame" layoutX="677.0" layoutY="92.0" mnemonicParsing="false" text="Start Your Adventure">
                      <font>
                         <Font name="Harrington" size="36.0" />
                      </font>
