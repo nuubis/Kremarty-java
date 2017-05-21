@@ -126,7 +126,11 @@
                         <Font name="Harrington" size="36.0" />
                      </font>
                   </Label>
+<<<<<<< HEAD
                   <Button fx:id="startGame" layoutX="677.0" layoutY="36.0" mnemonicParsing="false" onAction="#changeScene" opacity="0.0" text="Start Your Adventure">
+=======
+                  <Button fx:id="startGame" layoutX="677.0" layoutY="92.0" mnemonicParsing="false" onAction="#changeScene" opacity="0.0" text="Start Your Adventure">
+>>>>>>> ebbb07370d8d6311bb349be525cdadd190aef825
                      <font>
                         <Font name="Harrington" size="36.0" />
                      </font>
