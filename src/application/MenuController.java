@@ -61,6 +61,7 @@ public class MenuController implements Initializable {
 	    stage.show();
 	    }
 	
+	@FXML
 	private void createCharacter(ActionEvent event) throws IOException{
 		String race;
 		String name;
