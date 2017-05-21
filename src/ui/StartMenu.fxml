@@ -14,7 +14,7 @@
             <Image url="@../../Pictures/Arbol-de-fantasia-pikmix.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="177.0" layoutY="56.0" text="Lost Rage" textFill="WHITE">
+      <Label layoutX="177.0" layoutY="14.0" text="Lost Rage" textFill="WHITE">
          <font>
             <Font name="Bradley Hand ITC" size="200.0" />
          </font>
