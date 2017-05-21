@@ -30,9 +30,10 @@ import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
 	
-	private String gender;
+	/* For radio buttons
+	 * private String gender;
 	private String race;
-	private String name;
+	private String name;*/
 	
 	@FXML
 	public Button play, load, help, quit, startGame, back;
@@ -65,8 +66,8 @@ public class MenuController implements Initializable {
 		System.out.println("hello");
 		Stage stage;
 	    Parent root;
-	    System.out.println(event.getSource());
-	    System.out.println(charChoose);
+	    //System.out.println(event.getSource());
+	    //System.out.println(charChoose);
 		if (event.getSource()==charChoose){
 			System.out.println("I work");
 	    	stage=(Stage) charChoose.getScene().getWindow();
@@ -79,8 +80,8 @@ public class MenuController implements Initializable {
 		System.out.println("I work");
 	    Stage stage; 
 	    Parent root;
-	    System.out.println(event.getSource());
-	    System.out.println(play);
+	    //System.out.println(event.getSource());
+	    //System.out.println(play);
 	    if(event.getSource()==play){
 	       //get reference to the button's stage         
 	       stage=(Stage) play.getScene().getWindow();
@@ -100,16 +101,17 @@ public class MenuController implements Initializable {
 	    }
 	    
 	    else if(event.getSource()==startGame){
-	    	Character character = new HumanCharacter("Test", "male", 100, 100, new ArrayList<>(), 10, "human", 5, 5);
+	    	Character human = new HumanCharacter("Test", "Male", 100, new Inventory(), 10, "Human", 100, 5, 5);
 	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
 	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
 	    	String gender = genderButton.getText();
 	    	String race = raceButton.getText();
 			String name = insertName.getText();
 			System.out.println("Race, gender, name: "+race + " " + gender + " " + name);*/
+	    	System.out.println(human.getName());
 			
 	    	stage=(Stage) startGame.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
+		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
 	    }
 	     
 	    else {
