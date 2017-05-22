@@ -35,12 +35,15 @@ public class MenuController implements Initializable {
 	private String race;
 	private String name;*/
 	
-	@FXML
+	
 	//Menu Buttons
+	@FXML
 	public Button play, load, help, quit, startGame, back;
 	//Activity Buttons
+	@FXML
 	Button craft, explore, gather, mine, village, gameBack, save;
 	//Explore Buttons
+	@FXML
 	Button combat, combatSmallBoss, combatBoss, exploreBack;
 	public TextField insertName;
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
