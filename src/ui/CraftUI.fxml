@@ -23,10 +23,15 @@
          <children>
             <ImageView fitHeight="622.0" fitWidth="524.0" layoutX="-6.0" layoutY="-7.0">
                <image>
-                  <Image url="@../../Pictures/empty%20inventory.png" />
+                  <Image url="@../../Pictures/empty%20inventory%202.png" />
                </image>
             </ImageView>
-            <GridPane layoutY="-2.0" prefHeight="600.0" prefWidth="500.0">
+            <ImageView fitHeight="622.0" fitWidth="524.0" layoutX="-6.0" layoutY="-7.0">
+               <image>
+                  <Image url="@../../Pictures/empty%20inventory%203.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="-2.0" layoutY="-3.0" prefHeight="600.0" prefWidth="500.0">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -58,11 +63,7 @@
       </Pane>
       <Pane layoutX="626.0" layoutY="100.0" prefHeight="600.0" prefWidth="500.0">
          <children>
-            <ScrollPane prefHeight="600.0" prefWidth="500.0" vbarPolicy="NEVER">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-              </content>
-            </ScrollPane>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="500.0" vbarPolicy="ALWAYS" />
          </children>
       </Pane>
       <Label layoutX="207.0" layoutY="34.0" text="Your Inventory">
@@ -70,6 +71,9 @@
             <Font name="Harrington" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="gameBack" layoutX="616.0" layoutY="292.0" mnemonicParsing="false" onAction="#changeGameScene" text="back" />
+      <Button fx:id="gameBack" layoutX="559.0" layoutY="733.0" mnemonicParsing="false" onAction="#changeGameScene" text="back">
+         <font>
+            <Font name="Harrington" size="24.0" />
+         </font></Button>
    </children>
 </AnchorPane>

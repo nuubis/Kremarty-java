@@ -9,37 +9,17 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <ImageView fitHeight="810.0" fitWidth="1200.0" layoutY="-8.0">
-         <image>
-            <Image url="@../../Pictures/Arbol-de-fantasia-pikmix.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="61.0" layoutY="672.0">
-         <image>
-            <Image url="@../../Pictures/button%20art%20white.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="346.0" layoutY="672.0">
-         <image>
-            <Image url="@../../Pictures/button%20art%20white.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="663.0" layoutY="672.0">
-         <image>
-            <Image url="@../../Pictures/button%20art%20white.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="200.0" layoutX="935.0" layoutY="672.0">
-         <image>
-            <Image url="@../../Pictures/button%20art%20white.png" />
-         </image>
-      </ImageView>
       <Label layoutX="177.0" layoutY="14.0" text="Lost Rage" textFill="WHITE">
          <font>
             <Font name="Bradley Hand ITC" size="200.0" />
          </font>
       </Label>
-      <Label layoutX="112.0" layoutY="669.0" text="Play" textFill="WHITE">
+      <ImageView fitHeight="810.0" fitWidth="1200.0" layoutY="-8.0">
+         <image>
+            <Image url="@../../Pictures/startmenu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="669.0" text="Play">
          <font>
             <Font name="Harrington" size="48.0" />
          </font>
@@ -49,7 +29,7 @@
             <Font name="Harrington" size="48.0" />
          </font>
       </Button>
-      <Label layoutX="392.0" layoutY="669.0" text="Load" textFill="WHITE">
+      <Label layoutX="392.0" layoutY="669.0" text="Load">
          <font>
             <Font name="Harrington" size="48.0" />
          </font>
@@ -59,7 +39,7 @@
             <Font name="Harrington" size="48.0" />
          </font>
       </Button>
-      <Label layoutX="714.0" layoutY="669.0" text="Help" textFill="WHITE">
+      <Label layoutX="714.0" layoutY="669.0" text="Help">
          <font>
             <Font name="Harrington" size="48.0" />
          </font>
@@ -69,7 +49,7 @@
             <Font name="Harrington" size="48.0" />
          </font>
       </Button>
-      <Label layoutX="992.0" layoutY="669.0" text="Quit" textFill="WHITE">
+      <Label layoutX="992.0" layoutY="669.0" text="Quit">
          <font>
             <Font name="Harrington" size="48.0" />
          </font>
@@ -79,5 +59,25 @@
             <Font name="Harrington" size="48.0" />
          </font>
       </Button>
+      <ImageView fitHeight="59.0" fitWidth="170.0" layoutX="76.0" layoutY="669.0">
+         <image>
+            <Image url="@../../Pictures/button%20art.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="170.0" layoutX="361.0" layoutY="669.0">
+         <image>
+            <Image url="@../../Pictures/button%20art.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="170.0" layoutX="678.0" layoutY="669.0">
+         <image>
+            <Image url="@../../Pictures/button%20art.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="170.0" layoutX="950.0" layoutY="669.0">
+         <image>
+            <Image url="@../../Pictures/button%20art.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
