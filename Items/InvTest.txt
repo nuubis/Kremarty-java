@@ -1,0 +1,1 @@
+Wood,Gathering Material,Common,Something hard to hit your head with,10,2
