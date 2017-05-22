@@ -9,12 +9,14 @@ public class Item {
 	int amount;
 	int price;
 	
-	public Item(String name, String type, int amount, String description) {
+	public Item(String name, String type, String rarity, String description, int amount, int price) {
 		super();
 		this.name = name;
 		this.type = type;
-		this.amount = amount;
+		this.rarity = rarity;
 		this.description = description;
+		this.amount = amount;
+		this.price = price;
 	}
 
 	public String getItemName() {
