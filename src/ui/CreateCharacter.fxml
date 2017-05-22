@@ -127,7 +127,7 @@
                      </font>
                   </Label>
 
-                  <Button fx:id="startGame" layoutX="677.0" layoutY="36.0" mnemonicParsing="false" onAction="#changeScene" opacity="0.0" text="Start Your Adventure">
+                  <Button fx:id="startGame" layoutX="677.0" layoutY="36.0" mnemonicParsing="false" onAction="#changeMenuScene" opacity="0.0" text="Start Your Adventure">
 
                      <font>
                         <Font name="Harrington" size="36.0" />
@@ -138,7 +138,7 @@
                         <Font name="Harrington" size="24.0" />
                      </font>
                   </Label>
-                  <Button fx:id="back" layoutX="750.0" layoutY="112.0" mnemonicParsing="false" onAction="#changeScene" opacity="0.0" text="Back To Main Menu">
+                  <Button fx:id="back" layoutX="750.0" layoutY="112.0" mnemonicParsing="false" onAction="#changeMenuScene" opacity="0.0" text="Back To Main Menu">
                      <font>
                         <Font name="Harrington" size="24.0" />
                      </font></Button>
