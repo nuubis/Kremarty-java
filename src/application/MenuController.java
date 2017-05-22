@@ -3,12 +3,16 @@ package application;
 import game.Character;
 import game.HumanCharacter;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import game.Inventory;
+import game.Item;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -29,6 +33,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
+	
 	
 	/* For radio buttons
 	 * private String gender;
@@ -54,7 +59,23 @@ public class MenuController implements Initializable {
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		Inventory inv = new Inventory(new ArrayList<>());
+		try {
+			URL url = this.getClass().getResource("/items/InvTest.txt");
+			inv.itemsFromFileToArray(new File(url.toURI()));
+			for (Item item : inv.getInventoryItems()){
+				System.out.println(item.toString());
+			}
+		} 
+		catch (FileNotFoundException e) {
+			System.out.println("Error in reading inventory items!");
+			e.printStackTrace();
+		}
 		//System.out.println("System working!");
+		catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	@FXML
@@ -84,6 +105,57 @@ public class MenuController implements Initializable {
 		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
 	    }
 	}
+	
+	@FXML
+	private void changeMenuScene(ActionEvent event) throws IOException{
+		System.out.println("Menu works");
+	    Stage stage; 
+	    Parent root;
+	    //System.out.println(event.getSource());
+	    //System.out.println(play);
+	    
+	    if(event.getSource()==play){
+	       //get reference to the button's stage         
+	       stage=(Stage) play.getScene().getWindow();
+	       //load up OTHER FXML document
+	       root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	    }
+	    
+	    
+	    else if (event.getSource()==load){
+	    	stage=(Stage) load.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	    }
+	    
+	    else if (event.getSource()==help){
+	    	stage=(Stage) help.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
+	    }
+	    
+	    else if(event.getSource()==startGame){
+	    	Character human = new HumanCharacter("Test", "Male", 100, new Inventory(new ArrayList<>()), 10, "Human", 100, 5, 5);
+	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
+	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
+	    	String gender = genderButton.getText();
+	    	String race = raceButton.getText();
+			String name = insertName.getText();
+			System.out.println("Race, gender, name: "+race + " " + gender + " " + name);*/
+	    	System.out.println(human.getName());
+			
+	    	stage=(Stage) startGame.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
+	    }
+	     
+	    else {
+	    	stage=(Stage) back.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
+		    }
+
+	    //create a new scene with root and set the stage
+	    Scene scene = new Scene(root);
+	    stage.setScene(scene);
+	    stage.show();
+	   	}
 	
 	@FXML
 	private void changeExploreScene(ActionEvent event) throws IOException{
@@ -198,55 +270,7 @@ public class MenuController implements Initializable {
 	    stage.show();
 	}
 	
-	@FXML
-	private void changeMenuScene(ActionEvent event) throws IOException{
-		System.out.println("Menu works");
-	    Stage stage; 
-	    Parent root;
-	    //System.out.println(event.getSource());
-	    //System.out.println(play);
-	    if(event.getSource()==play){
-	       //get reference to the button's stage         
-	       stage=(Stage) play.getScene().getWindow();
-	       //load up OTHER FXML document
-	       root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
-	    }
-	    
-	    
-	    else if (event.getSource()==load){
-	    	stage=(Stage) load.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
-	    }
-	    
-	    else if (event.getSource()==help){
-	    	stage=(Stage) help.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
-	    }
-	    
-	    else if(event.getSource()==startGame){
-	    	Character human = new HumanCharacter("Test", "Male", 100, new Inventory(new ArrayList<>()), 10, "Human", 100, 5, 5);
-	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
-	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
-	    	String gender = genderButton.getText();
-	    	String race = raceButton.getText();
-			String name = insertName.getText();
-			System.out.println("Race, gender, name: "+race + " " + gender + " " + name);*/
-	    	System.out.println(human.getName());
-			
-	    	stage=(Stage) startGame.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
-	    }
-	     
-	    else {
-	    	stage=(Stage) back.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
-		    }
-
-	    //create a new scene with root and set the stage
-	    Scene scene = new Scene(root);
-	    stage.setScene(scene);
-	    stage.show();
-	   	}
+	
 	
 	
 	

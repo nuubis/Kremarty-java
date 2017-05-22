@@ -2,7 +2,7 @@ package game;
 
 public class Item {
 
-	String name;
+	static String name;
 	String type;
 	String rarity;
 	String description;
@@ -39,10 +39,8 @@ public class Item {
 		return description;
 	}
 	
-	
-	
-
-	
-	
+	public String toString(){
+		return "Item name: " + name;
+	}	
 	
 }

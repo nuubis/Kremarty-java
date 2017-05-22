@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Inventory {
 	
-	ArrayList<Item> inventoryItems = new ArrayList<>();
+	public ArrayList<Item> inventoryItems;
 	
 	public Inventory(ArrayList<Item> inventoryItems) {
 		super();
@@ -30,10 +30,19 @@ public class Inventory {
 		inventoryItems.remove(item);
 	}
 	
-	public void itemsFromFileToArray(String fileName) throws FileNotFoundException{
-		File inventory = new File(fileName);
+	public void itemsFromFileToArray(File inventory) throws FileNotFoundException{
+		//File inventory = new File(fileName);
 		Scanner invReader = new Scanner(inventory);
-		inventoryItems.add(new Item("Apple", "Food", "Common", "Good and crunchy", 1, 2));
+		String line;
+		String[] temporaryItem;
+		while(invReader.hasNextLine()){
+			line = invReader.nextLine();
+			temporaryItem = line.split(",");
+			
+			inventoryItems.add(new Item(temporaryItem[0], temporaryItem[1], temporaryItem[2], temporaryItem[3], 
+					Integer.parseInt(temporaryItem[4]), Integer.parseInt(temporaryItem[5])));
+		}
+		
 	}
 	
 }
