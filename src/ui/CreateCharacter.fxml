@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
@@ -12,11 +17,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
       <ImageView fitHeight="800.0" fitWidth="1200.0">
          <image>
-            <Image url="@../../Pictures/Untitled-2.jpg" />
+            <Image url="@../pictures/Untitled-2.jpg" />
          </image>
       </ImageView>
       <VBox prefHeight="300.0" prefWidth="1200.0">
@@ -63,17 +68,17 @@
                   </TextArea>
                   <ImageView layoutX="444.0" layoutY="90.0">
                      <image>
-                        <Image url="@../../Pictures/elf.jpg" />
+                        <Image url="@../pictures/elf.jpg" />
                      </image>
                   </ImageView>
                   <ImageView layoutX="835.0" layoutY="90.0">
                      <image>
-                        <Image url="@../../Pictures/dwarf.jpg" />
+                        <Image url="@../pictures/dwarf.jpg" />
                      </image>
                   </ImageView>
                   <ImageView layoutX="52.0" layoutY="90.0">
                      <image>
-                        <Image url="@../../Pictures/human.jpg" />
+                        <Image url="@../pictures/human.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -144,12 +149,12 @@
                      </font></Button>
                   <ImageView fitHeight="67.0" fitWidth="384.0" layoutX="677.0" layoutY="36.0">
                      <image>
-                        <Image url="@../../Pictures/button%20art.png" />
+                        <Image url="@../pictures/button%20art.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="45.0" fitWidth="238.0" layoutX="750.0" layoutY="112.0">
                      <image>
-                        <Image url="@../../Pictures/button%20art.png" />
+                        <Image url="@../pictures/button%20art.png" />
                      </image>
                   </ImageView>
                </children>

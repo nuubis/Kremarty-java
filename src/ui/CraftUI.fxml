@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -12,23 +17,23 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
       <ImageView fitHeight="800.0" fitWidth="1200.0">
          <image>
-            <Image url="@../../Pictures/Untitled-2.jpg" />
+            <Image url="@../pictures/Untitled-2.jpg" />
          </image>
       </ImageView>
       <Pane layoutX="75.0" layoutY="100.0" prefHeight="600.0" prefWidth="500.0">
          <children>
             <ImageView fitHeight="622.0" fitWidth="524.0" layoutX="-6.0" layoutY="-7.0">
                <image>
-                  <Image url="@../../Pictures/empty%20inventory%202.png" />
+                  <Image url="@../pictures/empty%20inventory%202.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="622.0" fitWidth="524.0" layoutX="-6.0" layoutY="-7.0">
                <image>
-                  <Image url="@../../Pictures/empty%20inventory%203.png" />
+                  <Image url="@../pictures/empty%20inventory%203.png" />
                </image>
             </ImageView>
             <GridPane layoutX="-2.0" layoutY="-3.0" prefHeight="600.0" prefWidth="500.0">

@@ -224,7 +224,7 @@ public class MenuController implements Initializable {
 	    }
 	    
 	    else if(event.getSource()==startGame){
-	    	Character human = new HumanCharacter("Test", "Male", 100, new Inventory(), 10, "Human", 100, 5, 5);
+	    	Character human = new HumanCharacter("Test", "Male", 100, new Inventory(new ArrayList<>()), 10, "Human", 100, 5, 5);
 	    	/*RadioButton raceButton = (RadioButton) Race.getSelectedToggle();
 	    	RadioButton genderButton = (RadioButton) Gender.getSelectedToggle();
 	    	String gender = genderButton.getText();
