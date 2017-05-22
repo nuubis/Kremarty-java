@@ -18,4 +18,8 @@ public class Inventory {
 		inventoryItems.add(item);
 	}
 	
+	public void removeItem(Item item){
+		inventoryItems.remove(item);
+	}
+	
 }
