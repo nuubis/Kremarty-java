@@ -14,14 +14,14 @@
             <Image url="@../../Pictures/map.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="back" layoutX="531.0" layoutY="699.0" mnemonicParsing="false" onAction="#changeScene" text="Menu" />
-      <Button fx:id="save" layoutX="448.0" layoutY="699.0" mnemonicParsing="false" onAction="#changeScene" text="Save" />
+      <Button fx:id="back" layoutX="531.0" layoutY="699.0" mnemonicParsing="false" onAction="#changeMenuScene" text="Menu" />
+      <Button fx:id="save" layoutX="448.0" layoutY="699.0" mnemonicParsing="false" onAction="#changeMenuScene" text="Save" />
       <Label layoutX="866.0" layoutY="208.0" text="Mine">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="mine" layoutX="850.0" layoutY="200.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Mine">
+      <Button fx:id="mine" layoutX="850.0" layoutY="200.0" mnemonicParsing="false" opacity="0.0" onAction="#changeGameScene" text="Mine">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -31,7 +31,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="village" layoutX="308.0" layoutY="406.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Village">
+      <Button fx:id="village" layoutX="308.0" layoutY="406.0" mnemonicParsing="false" opacity="0.0" onAction="#changeGameScene" text="Village">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -41,7 +41,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="craft" layoutX="590.0" layoutY="501.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Craft">
+      <Button fx:id="craft" layoutX="590.0" layoutY="501.0" mnemonicParsing="false" opacity="0.0" onAction="#changeGameScene" text="Craft">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -51,7 +51,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="gather" layoutX="309.0" layoutY="607.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Gather">
+      <Button fx:id="gather" layoutX="309.0" layoutY="607.0" mnemonicParsing="false" opacity="0.0" onAction="#changeGameScene" text="Gather">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>
@@ -61,7 +61,7 @@
             <Font name="Harrington" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="explore" layoutX="850.0" layoutY="663.0" mnemonicParsing="false" opacity="0.0" onAction="#changeScene" text="Explore">
+      <Button fx:id="explore" layoutX="850.0" layoutY="663.0" mnemonicParsing="false" opacity="0.0" onAction="#changeGameScene" text="Explore">
          <font>
             <Font name="Harrington" size="24.0" />
          </font>

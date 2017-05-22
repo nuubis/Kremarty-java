@@ -36,7 +36,12 @@ public class MenuController implements Initializable {
 	private String name;*/
 	
 	@FXML
-	public Button play, load, help, quit, startGame, back, craft, explore, gather, mine, village, gameBack;
+	//Menu Buttons
+	public Button play, load, help, quit, startGame, back;
+	//Activity Buttons
+	Button craft, explore, gather, mine, village, gameBack, save;
+	//Explore Buttons
+	Button combat, combatSmallBoss, combatBoss, exploreBack;
 	public TextField insertName;
 	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
 	ToggleGroup Race, Gender;
@@ -44,7 +49,7 @@ public class MenuController implements Initializable {
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		System.out.println("System working!");
+		//System.out.println("System working!");
 	}
 	
 	@FXML
@@ -76,8 +81,85 @@ public class MenuController implements Initializable {
 	}
 	
 	@FXML
-	private void changeScene(ActionEvent event) throws IOException{
-		System.out.println("I work");
+	private void changeExploreScene(ActionEvent event) throws IOException{
+		System.out.println("Explore works");
+	    Stage stage; 
+	    Parent root;
+	    
+	    if (event.getSource()==combat){
+	    	stage=(Stage) combat.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combatSmallBoss){
+	    	stage=(Stage) combatSmallBoss.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CompatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combatBoss){
+	    	stage=(Stage) combatBoss.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/VillageUI.fxml"));
+	    }
+	    
+	    else {
+	    	stage=(Stage) exploreBack.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ExploreUI.fxml"));
+	    }
+	    
+	    Scene scene = new Scene(root);
+	    stage.setScene(scene);
+	    stage.show();
+	}
+	@FXML
+	private void changeGameScene(ActionEvent event) throws IOException{
+		System.out.println("Activity works");
+	    Stage stage; 
+	    Parent root;
+	    
+	    if (event.getSource()==craft){
+	    	stage=(Stage) craft.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CraftUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==explore){
+	    	stage=(Stage) explore.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ExploreUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==gather){
+	    	stage=(Stage) gather.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/GatherUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==mine){
+	    	stage=(Stage) mine.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/MineUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==village){
+	    	stage=(Stage) village.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/VillageUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==save){
+	    	stage=(Stage) save.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/StartMenu.fxml"));
+	    }
+	    
+	    else {
+	    	System.out.println(gameBack);
+	    	stage=(Stage) gameBack.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
+	    }
+	    
+	    Scene scene = new Scene(root);
+	    stage.setScene(scene);
+	    stage.show();
+	}
+	
+	@FXML
+	private void changeMenuScene(ActionEvent event) throws IOException{
+		System.out.println("Menu works");
 	    Stage stage; 
 	    Parent root;
 	    //System.out.println(event.getSource());
@@ -111,36 +193,6 @@ public class MenuController implements Initializable {
 	    	System.out.println(human.getName());
 			
 	    	stage=(Stage) startGame.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
-	    }
-	    
-	    else if (event.getSource()==craft){
-	    	stage=(Stage) craft.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/CraftUI.fxml"));
-	    }
-	    
-	    else if (event.getSource()==explore){
-	    	stage=(Stage) explore.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/ExploreUI.fxml"));
-	    }
-	    
-	    else if (event.getSource()==gather){
-	    	stage=(Stage) gather.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/GatherUI.fxml"));
-	    }
-	    
-	    else if (event.getSource()==mine){
-	    	stage=(Stage) mine.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/MineUI.fxml"));
-	    }
-	    
-	    else if (event.getSource()==village){
-	    	stage=(Stage) village.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/VillageUI.fxml"));
-	    }
-	    
-	    else if (event.getSource()==gameBack){
-	    	stage=(Stage) gameBack.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/ActivityChoice.fxml"));
 	    }
 	     
