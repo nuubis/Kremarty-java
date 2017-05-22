@@ -39,16 +39,18 @@ public class MenuController implements Initializable {
 	//Menu Buttons
 	@FXML
 	public Button play, load, help, quit, startGame, back;
+	
 	//Activity Buttons
 	@FXML
-	Button craft, explore, gather, mine, village, gameBack, save;
+	public Button craft, explore, gather, mine, village, gameBack, save;
+	
 	//Explore Buttons
 	@FXML
-	Button combat, combatSmallBoss, combatBoss, exploreBack;
+	public Button combat1, combat2, combat3, combat4, combat6, combat7, combat8, combat9, combatSmallBoss, combatBoss, exploreBack;
 	public TextField insertName;
-	RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
-	ToggleGroup Race, Gender;
-	ImageView charChoose;
+	public RadioButton radioHuman, radioElf, radioDwarf, radioMale, radioFemale;
+	public ToggleGroup Race, Gender;
+	public ImageView charChoose;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -89,22 +91,58 @@ public class MenuController implements Initializable {
 	    Stage stage; 
 	    Parent root;
 	    
-	    if (event.getSource()==combat){
-	    	stage=(Stage) combat.getScene().getWindow();
+	    if (event.getSource()==combat1){
+	    	stage=(Stage) combat1.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat2){
+	    	stage=(Stage) combat2.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat3){
+	    	stage=(Stage) combat3.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat4){
+	    	stage=(Stage) combat4.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat6){
+	    	stage=(Stage) combat6.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat7){
+	    	stage=(Stage) combat7.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat8){
+	    	stage=(Stage) combat8.getScene().getWindow();
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
+	    }
+	    
+	    else if (event.getSource()==combat9){
+	    	stage=(Stage) combat9.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
 	    }
 	    
 	    else if (event.getSource()==combatSmallBoss){
 	    	stage=(Stage) combatSmallBoss.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/CompatUI.fxml"));
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
 	    }
 	    
 	    else if (event.getSource()==combatBoss){
 	    	stage=(Stage) combatBoss.getScene().getWindow();
-		    root = FXMLLoader.load(getClass().getResource("/ui/VillageUI.fxml"));
+		    root = FXMLLoader.load(getClass().getResource("/ui/CombatUI.fxml"));
 	    }
 	    
 	    else {
+	    	System.out.println(exploreBack);
 	    	stage=(Stage) exploreBack.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/ExploreUI.fxml"));
 	    }
