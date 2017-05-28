@@ -42,6 +42,7 @@ public class Inventory {
 			inventoryItems.add(new Item(temporaryItem[0], temporaryItem[1], temporaryItem[2], temporaryItem[3], 
 					Integer.parseInt(temporaryItem[4]), Integer.parseInt(temporaryItem[5])));
 		}
+		invReader.close();
 		
 	}
 	

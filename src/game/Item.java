@@ -2,7 +2,7 @@ package game;
 
 public class Item {
 
-	static String name;
+	String name;
 	String type;
 	String rarity;
 	String description;

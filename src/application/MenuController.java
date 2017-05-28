@@ -2,7 +2,6 @@ package application;
 
 import game.Character;
 import game.HumanCharacter;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,7 +9,6 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
 import game.Inventory;
 import game.Item;
 import javafx.application.Platform;
@@ -28,8 +26,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
@@ -73,7 +69,6 @@ public class MenuController implements Initializable {
 		}
 		//System.out.println("System working!");
 		catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -92,7 +87,7 @@ public class MenuController implements Initializable {
         });
 	}
 	
-	@FXML
+	/*@FXML
 	private void changeScene2(MouseEvent event) throws IOException{
 		System.out.println("hello");
 		Stage stage;
@@ -104,7 +99,7 @@ public class MenuController implements Initializable {
 	    	stage=(Stage) charChoose.getScene().getWindow();
 		    root = FXMLLoader.load(getClass().getResource("/ui/CreateCharacter.fxml"));
 	    }
-	}
+	}*/
 	
 	@FXML
 	private void changeMenuScene(ActionEvent event) throws IOException{
